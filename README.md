@@ -55,7 +55,7 @@ It helps users:
 # 🚀 Run Locally
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/omnara-ai-travel-assistant.git
+git clone https://github.com/Lagnadeep-samal/omnara-ai-travel-assistant.git
 
 cd omnara-ai-travel-assistant
 
