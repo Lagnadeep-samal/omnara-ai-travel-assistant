@@ -1,41 +1,64 @@
-# AI Travel Planner
+# 🌍 Omnara — AI Travel Assistant
 
-AI-powered travel planner using:
+Omnara is an AI-powered travel planning assistant built using Flask, LangGraph, LangChain, and Ollama.
 
+It helps users:
+- plan trips
+- estimate budgets
+- discover tourist attractions
+- customize travel plans
+- search travel information intelligently
+
+---
+
+# ✨ Features
+
+- 🤖 AI Travel Chatbot
+- 🌴 Destination Recommendations
+- 💰 Budget Planner
+- 🏨 Hotel Suggestions
+- 🌦 Weather Information
+- 🔎 Web Search Integration
+- 🎨 Modern Responsive UI
+- 🧠 LangGraph Agent Workflow
+- ⚡ Groq Ultra-fast Inference
+
+---
+
+# 🛠 Tech Stack
+
+- Python
+- Flask
 - LangChain
 - LangGraph
-- Flask
-- Groq
-- Tavily Search
+- Groq API
+- Llama-3.3-70B-Versatile
+- HTML/CSS/JavaScript
+- DuckDuckGo Search
 
 ---
 
-# Features
+# 📸 Screenshots
 
-- Cheap hotel recommendations
-- Tourist place suggestions
-- Travel budgeting
-- Weather information
-- Real-time web search
+## Home UI
+
+![Home](screenshots/home.png)
+
+## Chat Interface
+
+![Chat 1](screenshots/chat1.png)
+
+![Chat 2](screenshots/chat2.png)
 
 ---
 
-# Install
+# 🚀 Run Locally
 
 ```bash
-uv add -r requirements.txt
-```
+git clone https://github.com/YOUR_USERNAME/omnara-ai-travel-assistant.git
 
----
+cd omnara-ai-travel-assistant
 
-# Run
+uv sync
 
-```bash
-python app.py
-```
-
----
-
-# Open
-
-http://127.0.0.1:5000
+uv run python app.py
