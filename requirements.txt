@@ -1,0 +1,12 @@
+langchain
+langgraph
+langchain-groq
+langchain-community
+tavily-python
+python-dotenv
+ipython
+jupyter
+grandalf
+pydantic
+typing-extensions
+flask

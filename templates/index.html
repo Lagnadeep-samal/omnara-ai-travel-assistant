@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Omnara - Smart Travel Companion</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+
+</head>
+
+<body>
+
+    <div class="main-container">
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+
+            <div class="logo-section">
+
+                <div class="logo-circle">
+                    ✈
+                </div>
+
+                <div>
+
+                    <h2>Omnara</h2>
+
+                    <p>Your Smart Travel Companion ✈</p>
+
+                </div>
+
+            </div>
+
+            <div class="menu">
+
+                <div class="menu-item active">
+
+                    <i class="fa-solid fa-comments"></i>
+
+                    Chat
+
+                </div>
+
+                <div class="menu-item">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    Destinations
+
+                </div>
+
+                <div class="menu-item">
+
+                    <i class="fa-solid fa-wallet"></i>
+
+                    Budget Planner
+
+                </div>
+
+                <div class="menu-item">
+
+                    <i class="fa-solid fa-lightbulb"></i>
+
+                    Travel Tips
+
+                </div>
+
+                <div class="menu-item">
+
+                    <i class="fa-solid fa-suitcase"></i>
+
+                    My Trips
+
+                </div>
+
+                <div class="menu-item">
+
+                    <i class="fa-solid fa-gear"></i>
+
+                    Settings
+
+                </div>
+
+            </div>
+
+            <!-- Promo Card -->
+
+            <div class="promo-card">
+
+                <h3>Plan Your Next Adventure 🌍</h3>
+
+                <p>
+                    Let Omnara help you discover
+                    the perfect destination,
+                    hotels, and travel plans.
+                </p>
+
+                <button>
+                    Explore Destinations
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Main Chat -->
+
+        <div class="chat-container">
+
+            <!-- Header -->
+
+            <div class="top-header">
+
+                <div>
+
+                    <h1>Welcome to Omnara 🌎</h1>
+
+                    <p>
+                        Where would you like to go today?
+                    </p>
+
+                </div>
+
+                <div class="weather-card">
+
+                    <div class="temp">
+                        ☀ 28°C
+                    </div>
+
+                    <div class="city">
+                        New Delhi
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Chat Box -->
+
+            <div id="chat-box">
+
+                <!-- Default Welcome Message -->
+
+                <div class="bot-message">
+
+                    <div class="avatar">
+                        🤖
+                    </div>
+
+                    <div class="message-content">
+
+                        <div class="message-header">
+
+                            <span class="agent-name">
+                                Omnara
+                            </span>
+
+                            <span class="time">
+                                Just now
+                            </span>
+
+                        </div>
+
+                        <div class="message-bubble">
+
+                            Hello 👋 <br><br>
+
+                            I am Omnara — your smart AI travel companion.
+
+                            <br><br>
+
+                            Ask me anything about:
+
+                            <ul>
+
+                                <li>Cheap hotels</li>
+
+                                <li>Budget travel plans</li>
+
+                                <li>Tourist attractions</li>
+
+                                <li>Flights and destinations</li>
+
+                                <li>Weather information</li>
+
+                                <li>Travel recommendations</li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Input Area -->
+
+            <div class="input-area">
+
+                <button class="attach-btn">
+
+                    <i class="fa-solid fa-paperclip"></i>
+
+                </button>
+
+                <input
+                    type="text"
+                    id="user-input"
+                    placeholder="Ask Omnara anything about travel..."
+                >
+
+                <button
+                    class="send-btn"
+                    onclick="sendMessage()"
+                >
+
+                    <i class="fa-solid fa-paper-plane"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script
+        src="{{ url_for('static', filename='script.js') }}"
+    ></script>
+
+</body>
+
+</html>
